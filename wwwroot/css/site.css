@@ -1,12 +1,8 @@
-html {
+﻿html {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
+
 
 html {
   position: relative;
@@ -14,5 +10,540 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    background-image: url('../images/dijidemiBg.jpg');
+    background-size: cover; /* Adjust the size as needed */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center center; /* Position the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Set width to viewport width */
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,500&display=swap');
+
+
+.soruDogruCevap {
+    font-size: 16px;
+    color: rgb(0, 207, 232);
+}
+
+.soruZorlukAdi {
+    font-size: 10px;
+    color: rgb(0, 207, 232);
+}
+
+#button-addon2 {
+    z-index: 1;
+}
+
+.breadcrumb-item {
+    border-right: none;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: "";
+    font-weight: 100;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    padding-top: 0px !important;
+}
+
+.tabCardHead > button {
+    text-align: left;
+}
+
+.dvScreen_test {
+    margin-top: 10px;
+}
+
+.smallders .list-group .list-group-item.dersler {
+    padding: 15px 20px 10px;
+}
+
+.smallders .list-group .list-group-item {
+    margin-bottom: 8px;
+}
+
+    .smallders .list-group .list-group-item.dersler h1 {
+        font-size: 15px;
+    }
+
+.smallders.scroll-area {
+    height: 185px;
+}
+
+.extrasmallders.scroll-area {
+    height: 122px;
+}
+
+.smalltable .ao-table-row-flex-cols .row {
+    min-height: 60px;
+}
+
+.ao-table-row-flex-cols .row p.datetime {
+    display: block;
+    min-height: auto;
+    margin-top: 0px;
+    line-height: 0.6rem;
+}
+
+table.data-list-view.smalltable .cl-order h4 {
+    font: bold 15px / 10px Poppins, sans-serif;
+}
+
+table.data-list-view.smalltable .cl-text h3 {
+    font: bold 10px / 10px Poppins, sans-serif;
+}
+
+table.data-list-view.smalltable .cl-text span {
+    font: 9px / 11px Poppins, sans-serif;
+    color: rgb(0, 207, 232);
+}
+
+table.data-list-view .cl-text .text-subeler {
+    font: 9px / 11px Poppins, sans-serif;
+    color: rgb(0, 207, 232);
+}
+
+table.data-list-view .cl-text .text-paylasilan-subeler {
+    font: 10px / 12px Poppins, sans-serif;
+    color: rgb(0, 207, 232);
+}
+
+table.data-list-view.dataTable.smalltable {
+    border-spacing: 0px 0.35rem;
+}
+
+.card-body .card .card-body {
+    padding: 0.1rem;
+}
+
+#anlatimTab > li {
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+#anlatimTab.nav.nav-tabs {
+    margin-bottom: 0px;
+}
+
+.anlatim #accordion {
+    width: calc(100%);
+}
+
+#anlatimTab .nav.nav-tabs .nav-item .nav-link {
+    font-size: 1.15rem;
+}
+
+    #anlatimTab .nav.nav-tabs .nav-item .nav-link.active {
+        color: rgb(240, 199, 36);
+    }
+
+        #anlatimTab .nav.nav-tabs .nav-item .nav-link.active::after {
+            background: linear-gradient(30deg, rgb(240, 231, 103), rgba(249, 186, 0, 0.5)) !important;
+            box-shadow: rgba(218, 255, 37, 0.5) 0px 0px 8px 0px !important;
+        }
+
+.book .card {
+    height: 400px;
+    overflow: hidden;
+}
+
+.book .card-img.img-fluid.mb-1 {
+    height: auto;
+    max-height: 270px;
+    width: auto;
+}
+
+.nobackground .modal-dialog {
+    margin: 30px auto;
+}
+
+.nobackground .modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.nobackground .close {
+    position: absolute;
+    right: 0px;
+    top: -25px;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+    opacity: 1;
+}
+
+#pricing-plan {
+    padding: 5px 0px;
+}
+
+.pricing-card .card-body {
+    padding: 1rem;
+}
+
+.pricing-card .card.popular {
+    border: 1px solid rgb(115, 103, 240);
+}
+
+.pricing-card .list-group-circle {
+    font-weight: 500;
+    color: rgb(94, 88, 115);
+}
+
+.pricing.card {
+    padding: 1px;
+}
+
+.pricing-card .annual-plan {
+    margin-bottom: 1.7rem;
+}
+
+    .pricing-card .annual-plan .plan-price sup {
+        top: -1.5rem;
+        left: 0.2rem;
+    }
+
+    .pricing-card .annual-plan .plan-price span {
+        font-size: 3.5rem;
+        line-height: 0.8;
+    }
+
+    .pricing-card .annual-plan .plan-price sub {
+        bottom: 0px;
+        right: 0.14rem;
+    }
+
+    .pricing-card .annual-plan .plan-discounted-price sup {
+        top: -1.5rem;
+        left: 0.2rem;
+    }
+
+    .pricing-card .annual-plan .plan-discounted-price span {
+        font-size: 3.5rem;
+        line-height: 0.8;
+    }
+
+    .pricing-card .annual-plan .plan-discounted-price sub {
+        bottom: 0px;
+        right: 0.14rem;
+    }
+
+    .pricing-card .annual-plan .annual-pricing {
+        position: absolute;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+    }
+
+.pricing-free-trial {
+    height: 16.71rem;
+    background-color: rgba(186, 191, 199, 0.12);
+    margin: 7.5rem -2rem 6.3rem;
+}
+
+    .pricing-free-trial .row {
+        margin: 0px;
+    }
+
+    .pricing-free-trial .pricing-trial-content {
+        padding: 0px 1rem;
+    }
+
+        .pricing-free-trial .pricing-trial-content img {
+            position: relative;
+            top: -3.1rem;
+        }
+
+@media (max-width: 767.98px) {
+    .pricing-free-trial {
+        height: auto;
+    }
+
+        .pricing-free-trial .pricing-trial-content {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+
+            .pricing-free-trial .pricing-trial-content .pricing-trial-img {
+                top: 0px;
+                margin-top: 2rem;
+                height: 150px;
+            }
+}
+
+@media (max-width: 575.98px) {
+    .pricing-free-trial {
+        margin-right: -1.2rem;
+        margin-left: -1.2rem;
+    }
+}
+
+.list-group .list-group-item {
+    line-height: 1;
+}
+
+    .list-group .list-group-item i, .list-group .list-group-item svg {
+        position: relative;
+    }
+
+.list-group .list-group-item-action:focus {
+    outline: 0px;
+}
+
+.list-group .list-group-item-action.active h1, .list-group .list-group-item-action.active h2, .list-group .list-group-item-action.active h3, .list-group .list-group-item-action.active h4, .list-group .list-group-item-action.active h5, .list-group .list-group-item-action.active h6, .list-group .list-group-item-action:active h1, .list-group .list-group-item-action:active h2, .list-group .list-group-item-action:active h3, .list-group .list-group-item-action:active h4, .list-group .list-group-item-action:active h5, .list-group .list-group-item-action:active h6 {
+    color: rgb(255, 255, 255);
+}
+
+.list-group .list-group-item-action small {
+    color: rgb(185, 185, 195) !important;
+}
+
+.list-group.list-group-circle {
+    border: none;
+}
+
+    .list-group.list-group-circle .list-group-item {
+        border: none;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+        .list-group.list-group-circle .list-group-item::after {
+            content: " ";
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz1cJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCcgd2lkdGg9XCcyNFwnIGhlaWdodD1cJzI0XCcgdmlld0JveD1cJzAgMCAyNCAyNFwnIGZpbGw9XCdub25lXCcgc3Ryb2tlPVwnIzZlNmI3YlwnIHN0cm9rZS13aWR0aD1cJzJcJyBzdHJva2UtbGluZWNhcD1cJ3JvdW5kXCcgc3Ryb2tlLWxpbmVqb2luPVwncm91bmRcJyBjbGFzcz1cJ2ZlYXRoZXIgZmVhdGhlci1jaXJjbGVcJz48Y2lyY2xlIGN4PVwnMTJcJyBjeT1cJzEyXCcgcj1cJzEwXCc+PC9jaXJjbGU+PC9zdmc+");
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: rgb(110, 107, 123);
+            background-size: 10px;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            top: 1.15rem;
+            left: 0px;
+        }
+
+        .list-group.list-group-circle .list-group-item:hover {
+            background-color: transparent;
+        }
+
+.list-group-item.gu-mirror {
+    border-radius: 0px;
+}
+
+.pricing-table.pricing-table-style-1 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+    .pricing-table.pricing-table-style-1 [class^="col"] {
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(237, 237, 238) transparent rgb(237, 237, 238) rgb(237, 237, 238);
+        border-image: initial;
+    }
+
+        .pricing-table.pricing-table-style-1 [class^="col"]:last-child {
+            border-right-color: rgb(237, 237, 238);
+        }
+
+.pricing-table .plan {
+    text-align: center;
+}
+
+.pricing-table .plan-title {
+    border-bottom: 1px solid rgb(237, 237, 238);
+    padding: 1.6rem 0px;
+}
+
+    .pricing-table .plan-title h3 {
+        font-size: 1.07692em;
+        margin: 0px;
+        padding: 0px;
+        color: rgb(150, 150, 150);
+    }
+
+    .pricing-table .plan-title em {
+        font-family: georgia, sans-serif;
+        font-size: 1em;
+        color: rgb(163, 163, 163);
+        margin: 0px;
+        padding: 0px;
+        opacity: 0.6;
+    }
+
+.pricing-table .plan-price {
+    padding: 2.5rem 0px 1.2rem;
+}
+
+    .pricing-table .plan-price strong {
+        font-size: 1.992em;
+        color: rgb(46, 50, 55);
+        font-weight: 800;
+    }
+
+        .pricing-table .plan-price strong em {
+            font-size: 0.5em;
+            font-style: normal;
+        }
+
+    .pricing-table .plan-price p {
+        font-family: georgia, sans-serif;
+        font-size: 1.23077em;
+        color: rgb(163, 163, 163);
+        margin: 0px;
+    }
+
+.pricing-table .plan-detail {
+    padding: 0px 0px 2rem;
+}
+
+    .pricing-table .plan-detail ul {
+        list-style: none;
+        margin: 0px 0px 1.5rem;
+        padding: 0px;
+    }
+
+        .pricing-table .plan-detail ul li {
+            margin: 0px;
+            padding: 0.5rem 0px;
+            border-bottom: 1px solid rgb(237, 237, 238);
+        }
+
+            .pricing-table .plan-detail ul li:first-child {
+                border-top: 1px solid rgb(237, 237, 238);
+            }
+
+.pricing-table .plan.plan-most-popular {
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .pricing-table .plan.plan-most-popular {
+        margin-top: -0.8rem;
+    }
+}
+
+.pricing-table .plan.plan-most-popular .plan-title h3, .pricing-table .plan.plan-most-popular .plan-title em {
+    color: rgb(255, 255, 255);
+}
+
+.pricing-table.pricing-table-style-2 table td, .pricing-table.pricing-table-style-2 table th {
+    border-width: 0px 1px 0px 0px;
+    border-top-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    border-right-style: solid;
+    border-right-color: rgb(237, 237, 238);
+    text-align: center;
+}
+
+.pricing-table.pricing-table-style-2 table td {
+    border-left: 1px solid rgb(237, 237, 238);
+}
+
+    .pricing-table.pricing-table-style-2 table td:first-child {
+        text-align: right;
+    }
+
+.pricing-table.pricing-table-style-2 table tbody tr:nth-of-type(2n+1) {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.pricing-table.pricing-table-style-2 table thead tr th {
+    vertical-align: top;
+    border-bottom: 1px solid rgb(237, 237, 238);
+    border-top: 1px solid rgb(237, 237, 238);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+    .pricing-table.pricing-table-style-2 table thead tr th:first-child {
+        border-top: 0px;
+        background: 0px 0px;
+    }
+
+.pricing-table.pricing-table-style-2 table tr:last-child {
+    background: 0px 0px !important;
+}
+
+    .pricing-table.pricing-table-style-2 table tr:last-child td {
+        border-top: 1px solid rgb(237, 237, 238);
+        border-left: 0px;
+    }
+
+        .pricing-table.pricing-table-style-2 table tr:last-child td.plan-action {
+            border-bottom: 1px solid rgb(237, 237, 238);
+        }
+
+.pricing-table.pricing-table-style-2 .plan.plan-most-popular {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .pricing-table.pricing-table-style-2 .plan.plan-most-popular {
+        margin-top: -0.8rem;
+    }
+}
+
+.pricing-table.pricing-table-style-2 .plan.plan-most-popular .plan-title h3, .pricing-table.pricing-table-style-2 .plan.plan-most-popular .plan-title em {
+    color: rgb(255, 255, 255);
+}
+
+.modal-satinal {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.main-menu-footer .header .version {
+    text-align: center;
+    color: rgb(163, 163, 163);
+    font: italic small-caps bold 9px / 0px Poppins;
+}
+
+.nav.nav-tabs .nav-item .nav-link:not(.active)::after {
+    content: attr(data-before);
+    height: 2px;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+    top: 100%;
+    transform: translateY(0px);
+    transition: all 0.2s linear 0s;
+    background: rgb(221, 221, 221) !important;
+}
+
+.errorValidate {
+    color: rgb(234, 84, 85);
+}
+
+.footer-btn img {
+    max-width: 85px;
+}
+
+.brand-logo img {
+    margin: 20px 0px;
 }
